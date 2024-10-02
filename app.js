@@ -187,3 +187,31 @@
 //     console.log(arr[n - 1 - i]);
 //   }
 // }
+// Array 11
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// let K = 2;
+// let L = 5;
+// let sum = 0;
+
+// for (let i = 0; i < arr.length; i++) {
+//   if (i < K || i > L) {
+//     sum += arr[i];
+//   }
+// }
+
+// console.log(sum);
+// Array 12
+// const arr = [10, false, "", "Abdulaziz", null];
+// const truthy = [];
+// const falsy = [];
+
+// for (let i = 0; i < arr.length; i++) {
+//   if (arr[i]) {
+//     truthy.push(arr[i]);
+//   } else {
+//     falsy.push(arr[i]);
+//   }
+// }
+
+// console.log("Truthy:", truthy);
+// console.log("Falsy:", falsy);
