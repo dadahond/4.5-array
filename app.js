@@ -67,8 +67,8 @@
 // console.log(arr);
 // ARRAY 7
 // let arr = [1, 5, 8, 9, 10];
-
-// [arr[0], arr[arr.length - 1]] = [arr[arr.length - 1], arr[0]];
+// arr.push(arr[0]);
+// arr.shift();
 // console.log(arr);
 
 // UYGA VAZIFA
@@ -79,20 +79,22 @@
 //   newN.push(2 ** i);
 // }
 // console.log(newN);
-// Array 2 ???
-// let n = 5;
-// let newN = [];
-// A = newN[0];
-// B = newN[1];
+// Array 2
+// let n = 6;
+// let a = 2;
+// let b = 3;
+// let result = [];
+// result[0] = a;
+// result[1] = b;
 
-// for (i = 2; i < n; i++) {
-//   let sum = 0;
-//   for (j = 0; j < i; j++) {
-//     sum += newN[j];
+// for (let i = 0; i < n; i++) {
+//   let counter = 0;
+//   for (j = 0; j < result.length; j++) {
+//     counter += result[j];
 //   }
-//   newN[i] = sum;
+//   result.push(counter);
 // }
-// console.log(newN);
+// console.log(result);
 // Array 3
 // let n = 5;
 // let a = [];
@@ -132,21 +134,14 @@
 // }
 // console.log(k);
 // Array 6
-// let n = prompt("n sonini kiriting n=juft son");
-// let result = [];
-// for (i = 0; i <= n; i++) {
-//   if (i % 2 == 0) {
-//     result.push(i);
-//   }
-// }
-// console.log(result);
+// let k = [3, 4, 5, 6, 7, 8, 9];
+// for (let i = 1; i < k.length; i += 2) {
+//   console.log(k[i]);
+
 // Array 7
-// let n = prompt("n sonini kiriting n=juft son");
-// let k = [];
-// for (i = 0; i < n; i++) {
-//   if (i % 2 == 1) {
-//     k.push(n - i);
-//   }
+// let k = [3, 4, 5, 6, 7, 8, 9];
+// for (let i = k.length - 1; i > 0; i -= 2) {
+//   console.log(k[i]);
 // }
 
 // console.log(k);
@@ -180,3 +175,15 @@
 //   }
 // }
 // console.log(k);
+// ARRAY 10
+
+// let arr = [1, 2, 3, 4, 5, 6, 7, 8];
+// let n = arr.length;
+// for (let i = 0; i < Math.ceil(n / 2); i++) {
+//   if (i < n) {
+//     console.log(arr[i]);
+//   }
+//   if (n - 1 - i > i) {
+//     console.log(arr[n - 1 - i]);
+//   }
+// }
